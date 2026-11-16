@@ -1,0 +1,38 @@
+# A project's own checks, as a team's CI would run them: each app's typecheck and tests against
+# the @kermodes/* packages it pins, and Ruff over the Python. The Kermodes controller deploys only
+# commits whose checks pass.
+name: ci
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  ticker:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: ticker
+    steps:
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - uses: astral-sh/setup-uv@v7
+        with:
+          version: 0.13.7
+
+      - name: Check the apps
+        run: |
+          bun install --frozen-lockfile
+          bun run typecheck
+          bun run test
+
+      - name: Run Ruff
+        run: |
+          uvx ruff@0.17 check
+          uvx ruff@0.17 format --check

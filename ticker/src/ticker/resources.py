@@ -1,5 +1,5 @@
 """md.ticks: a synthetic market-data feed, generated and ingested by one deployment, so it needs
-nothing else running: `kermodes dev --project examples/ticker` locally, or synced from git by
+nothing else running: `kermodes dev --project ticker` locally, or synced from git by
 `kermodes control` in the cluster. The market app over it is apps/market."""
 
 import time

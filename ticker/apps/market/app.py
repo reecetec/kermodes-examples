@@ -1,6 +1,7 @@
 """The market app's tables, computed in its own process and served to its page (App.tsx)."""
 
 import kermodes as km
+
 from ticker.md import COLUMNS, TICKS
 
 
