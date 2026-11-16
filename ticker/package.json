@@ -7,8 +7,8 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@kermodes/react": "0.5.1-dev.18.gddcb6a4",
-    "@kermodes/theme": "0.5.1-dev.18.gddcb6a4",
+    "@kermodes/react": "0.5.1-dev.20.g5ca1042",
+    "@kermodes/theme": "0.5.1-dev.20.g5ca1042",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
