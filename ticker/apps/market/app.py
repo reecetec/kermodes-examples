@@ -1,7 +1,8 @@
 """The market app's tables, computed in its own process and served to its page (App.tsx)."""
 
-import kermodes as km
+from datetime import UTC, datetime
 
+import kermodes as km
 from ticker.md import COLUMNS, TICKS
 
 
@@ -10,7 +11,12 @@ from ticker.md import COLUMNS, TICKS
 def market(db):
     # Whichever starts first creates md.ticks (creating it again changes nothing).
     db.create_table(TICKS, COLUMNS)
-    ticks = db.live_table(TICKS).update("notional = price * size")
+    # A live table is all of md.ticks's rows, weeks of them in the lake; the board is the day's
+    # (UTC), from the day the app starts. The filter reaches the files: past days are not read.
+    today = datetime.now(UTC).date().isoformat()
+    ticks = (
+        db.live_table(TICKS).where(f"ts >= '{today}'").update("notional = price * size")
+    )
     # Each symbol's day: where it opened and is now, its range, and what traded.
     day = ticks.agg_by(
         "sym",
