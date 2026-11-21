@@ -3,6 +3,7 @@
 from datetime import UTC, datetime
 
 import kermodes as km
+
 from ticker.md import COLUMNS, TICKS
 
 
