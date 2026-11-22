@@ -27,12 +27,13 @@ export default function App() {
   return (
     <Dashboard>
       <Stats>
-        <Stat label="Ticks today" value={count.format(ticks.total)} />
-        <Stat label="Symbols" value={count.format(board.total)} />
+        <Stat label="Ticks today" value={count.format(ticks.total)} status={ticks.status} />
+        <Stat label="Symbols" value={count.format(board.total)} status={board.status} />
         <Stat
           label="Leader"
           value={leader == null ? '—' : `${leader.sym} ${percent.format(leader.change_pct)}%`}
           sign={leader?.change_pct}
+          status={movers.status}
         />
       </Stats>
       <Split sizes={[60, 40]}>

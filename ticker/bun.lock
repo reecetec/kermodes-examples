@@ -5,8 +5,8 @@
     "": {
       "name": "ticker",
       "dependencies": {
-        "@kermodes/react": "0.5.1-dev.20.g5ca1042",
-        "@kermodes/theme": "0.5.1-dev.20.g5ca1042",
+        "@kermodes/react": "0.5.1-dev.92.g68a825e",
+        "@kermodes/theme": "0.5.1-dev.92.g68a825e",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
       },
@@ -129,13 +129,13 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
 
-    "@kermodes/client": ["@kermodes/client@0.5.1-dev.20.g5ca1042", "", {}, "sha512-TShvi7GpP7a08DewCAOjXuC2RTzC9FUKfqZqpIAEHDgWMQvA2qEHEpWx5R16OxtinwNzvBnghughM/aBVoquMA=="],
+    "@kermodes/client": ["@kermodes/client@0.5.1-dev.92.g68a825e", "", {}, "sha512-QmDPZ7ituFZ21JjQ+V2QJwqtKsujV8/1oAijiJFdFG1Gjx0Hgz97JrqWOncfcujK4dIaymma4tVZUKVQliAagg=="],
 
-    "@kermodes/grid": ["@kermodes/grid@0.5.1-dev.20.g5ca1042", "", { "dependencies": { "@kermodes/client": "0.5.1-dev.20.g5ca1042", "apache-arrow": "^21.0.0", "classnames": "^2.5.1", "memoize-one": "^6.0.0" }, "peerDependencies": { "react": "^19.0.0" } }, "sha512-zN7VmnhX61qZzzpsgA+gXgUNpURBCDG/de6mdNx4XMMIf6ZtLXNaKBQqJdneKNltlI6atudjs2sJgrzyZugcqQ=="],
+    "@kermodes/grid": ["@kermodes/grid@0.5.1-dev.92.g68a825e", "", { "dependencies": { "@kermodes/client": "0.5.1-dev.92.g68a825e", "apache-arrow": "^21.0.0", "classnames": "^2.5.1", "memoize-one": "^6.0.0" }, "peerDependencies": { "react": "^19.0.0" } }, "sha512-3zk16jxHkLzsJ0Bi49iWNc0PjL3Qf6Qxg5NudWU00biiDM0qxBaWzjFIWyQM7zMmc4u5lGFq5G+CgKtuKbs2lA=="],
 
-    "@kermodes/react": ["@kermodes/react@0.5.1-dev.20.g5ca1042", "", { "dependencies": { "@kermodes/client": "0.5.1-dev.20.g5ca1042", "@kermodes/grid": "0.5.1-dev.20.g5ca1042", "apache-arrow": "^21.0.0", "dockview-react": "^8.9.0", "plotly.js-finance-dist": "^4.3.0" }, "peerDependencies": { "react": "^19.0.0", "react-dom": "^19.0.0" } }, "sha512-N4rRbSge2cpRYUBj1sQ5xM52B2ovBZZpFrNkUawm+T6wGclOvSmHl4HOzzlcnZvlZksjeQpj4GDRw9I/gK4xlA=="],
+    "@kermodes/react": ["@kermodes/react@0.5.1-dev.92.g68a825e", "", { "dependencies": { "@kermodes/client": "0.5.1-dev.92.g68a825e", "@kermodes/grid": "0.5.1-dev.92.g68a825e", "apache-arrow": "^21.0.0", "dockview-react": "^8.9.0", "plotly.js-finance-dist": "^4.3.0" }, "peerDependencies": { "react": "^19.0.0", "react-dom": "^19.0.0" } }, "sha512-fUSSK/pqziMAXA++4lNHwR1LvBNic90S/er3AGKKG8QCSWF8Lt0+5N7VcRo8tFtszUS6Qm5CASRAPMrl1aP4uQ=="],
 
-    "@kermodes/theme": ["@kermodes/theme@0.5.1-dev.20.g5ca1042", "", {}, "sha512-khhEmx2Y9ntfgzpvrGEjkSOgL5Gt7/cDDgU0cvNtZPY64egbpvSM3NvUcdmhz+TD+SAF2JNzT713QhX5p0ubcA=="],
+    "@kermodes/theme": ["@kermodes/theme@0.5.1-dev.92.g68a825e", "", {}, "sha512-6H27k2LGPpPNI/K4Zp9KD9gb0bo6ti2vMLcIIhwfxFez6TCAbIHvck0U6qVdmRecBsqX650wcE8g4zeUiuqxYg=="],
 
     "@rolldown/pluginutils": ["@rolldown/pluginutils@1.0.0-rc.3", "", {}, "sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q=="],
 
